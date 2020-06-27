@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>《千与千寻》片段</title>
+<style type="text/css">
+body{
+	background-color:#FCC}
+video{
+	margin-left:120px;
+	margin-top:10px;
+	width:80%;
+	}
+	p{
+		background-color:#99C;
+		color:#366;
+		margin:20px auto;
+		width:30%;
+		font-size:20px;
+		border-radius:5px;}
+.p1{
+	background-color:#9CC;
+	color:#003;
+	margin:0px auto;
+	font-size:18px;
+	width:20%;
+	border-radius:8px;
+	}
+</style>
+<script language="javascript">
+window.onload=time1;
+function time1(){
+var d=new Date();
+var hms="时间："+d.getHours()+"点"+d.getMinutes()+"分"+ d.getSeconds()+"秒";
+document.getElementById("clock").innerHTML=hms; 
+setTimeout(time1,1000);
+}
+</script>
+</head>
+<body>
+<p id="clock" align="center" class="p1"></p>
+<video align="center" width="1000" height="490" controls  >
+ 	<source src="film3.mp4" type="video/mp4">
+ </video>
+<p align="center">《千与千寻》片段</p>
+</body>
+</html>

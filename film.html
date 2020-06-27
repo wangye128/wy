@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>影视</title>
+		<style type="text/css">
+	body{
+			background-color:#09C;}
+	marquee{
+		margin:20px 30px;
+		border:2px solid #669;
+		padding:2px 2px;
+		}
+	img{
+		width: 600px;height: 300px;
+		margin:8px;
+		}
+	ul{
+		background-color:#FC9;
+		margin-left:270px;
+		margin-right:270px;
+		font-size:23px;
+		border-radius:5px;
+		}
+	li{
+		display:inline;
+		list-style:none;
+		}
+		a:link {
+	color:#399;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color:#399;
+}
+a:hover {
+	text-decoration: none;
+	color:#9CC;
+}
+a:active {
+	text-decoration: none;
+}
+.p1{
+	background-color:#99C;
+	color:#003;
+	margin:10px auto;
+	font-size:18px;
+	width:20%;
+	border-radius:8px;
+	}
+</style>
+<script language="javascript">
+window.onload=time1;
+function time1(){
+var d=new Date();
+var hms="时间："+d.getHours()+"点"+d.getMinutes()+"分"+ d.getSeconds()+"秒";
+document.getElementById("clock").innerHTML=hms; 
+setTimeout(time1,1000);
+}
+</script>
+</head>
+<body>
+<p id="clock" align="center" class="p1"></p>
+	<marquee direction="left" behavior="alternate" scrollamount="10" scrolldelay="200"
+	onmouseover="this.stop()"
+	onmouseout="this.start()">
+		<img src="1.jpg">
+		<img src="2.jpg">
+		<img src="3.jpg">
+		<img src="4.jpg">
+		<img src="5.jpg">
+        <img src="6.jpg">
+        <img src="7.jpg">
+        <img src="8.jpg">
+        <img src="9.jpg">
+	</marquee>
+<div>
+<ul>
+<li align="center"><a href="film1.html" target="_self">《哈尔的移动城堡》</a></li>
+<li align="center"><a href="film2.html" target="_self">《悬崖上的金鱼公主》</a></li>
+<li align="center"><a href="film3.html" target="_self">《千与千寻》</a></li>
+<li align="center"><a href="http://www.baidu.com">更多</a></li>
+</ul>
+</div>
+</body>
+</html>
